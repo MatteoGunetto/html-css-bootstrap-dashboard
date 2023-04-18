@@ -1,0 +1,61 @@
+/* regole generali */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+/*macrostruttura*/
+header {
+    height: 70px;
+}
+.bottom_block {
+    height: calc(100% - 70px);
+    display: flex;
+}
+    .bottom_block > nav {
+        width: 70px;
+        height: 100%;
+    }
+        
+    .bottom_block #right_block {
+        width: calc(100% - 70px);
+        overflow-y: scroll;
+    } 
+    .fa-bell{
+        color: orange;
+    }
+        
+    
+        /* Side nav query from LG (992px) */
+            
+        @media screen and (min-width:992px) {
+            
+            .bottom_block > nav {
+                width: 150px;
+            }
+            .bottom_block #right_block {
+                width: calc(100% - 150px);
+            } 
+        }
+#right_block > nav {
+    width: 100%;
+    min-height: 125px;
+    background-color: #1b72e8;
+}
+    
+/* DEBUG*/
+ #right_block {
+    border: solid 2px blueviolet;
+ }
+
+ .bottom_block > nav {
+    background-color: cadetblue;
+ }
+
+.avatar{
+    width: 20px;
+    height: 20px;
+}
