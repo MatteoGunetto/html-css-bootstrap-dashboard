@@ -1,61 +1,138 @@
-/* regole generali */
+/*Regole generali*/
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
 }
+
 .wrapper {
     width: 100vw;
     height: 100vh;
 }
-/*macrostruttura*/
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+/* header */
 header {
     height: 70px;
 }
-.bottom_block {
+
+#logo_sm {
+    height: 100%;
+}
+
+header nav span i {
+    margin: 0 10px;
+}
+
+.text_orange{
+    color: #ff8f00;
+}
+.sm_none {
+    display: none;
+}
+
+.md_none {
+    display: none;
+}
+
+
+        /* Query MD */
+        @media screen and (min-width: 768px) {
+                    
+            .sm_none {
+                display:table-cell;
+            }
+
+        }
+
+        /* Query LG */
+        @media screen and (min-width: 992px) {
+                    
+            .md_none {
+                display:table-cell;
+            }
+
+            .lg_none {
+                display: none;
+            }
+
+        }
+
+.text_gray {
+    color: #6c757d;
+}
+
+.bg_blue {
+    background-color: #165bba;
+}
+
+.square_btn {
+    background: none;
+    color: grey;
+    border: solid 1px;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+    
+    .badge.rounded-pill {
+        font-size: .9em;
+    }
+
+        tr,
+        th,
+        td {
+            height: 50px;
+        }
+.page_block {
     height: calc(100% - 70px);
     display: flex;
 }
-    .bottom_block > nav {
+
+    /* page block nav */
+    .page_block > nav {
         width: 70px;
         height: 100%;
+        background-image: url("../img/sidebar-bg.png");
+        background-color: #0d2035;
     }
         
-    .bottom_block #right_block {
+    .page_block #action_block {
         width: calc(100% - 70px);
         overflow-y: scroll;
     } 
-    .fa-bell{
-        color: orange;
-    }
         
     
         /* Side nav query from LG (992px) */
             
         @media screen and (min-width:992px) {
             
-            .bottom_block > nav {
+            .page_block > nav {
                 width: 150px;
             }
-            .bottom_block #right_block {
+
+            .page_block #action_block {
                 width: calc(100% - 150px);
             } 
         }
-#right_block > nav {
+
+#action_block > nav {
     width: 100%;
     min-height: 125px;
     background-color: #1b72e8;
 }
     
-/* DEBUG*/
- #right_block {
-    border: solid 2px blueviolet;
- }
-
- .bottom_block > nav {
-    background-color: cadetblue;
- }
-
-.avatar{
-    width: 20px;
-    height: 20px;
-}
