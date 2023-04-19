@@ -60,10 +60,17 @@
                             <a href=""><i class="fa-solid fa-list-ul"></i></a>
                             <a href=""><i class="fa-solid fa-circle-question"></i></a>
                             <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
-
                         </span>
-
-                        <a href=""><i class="fa-solid fa-bell text_orange"></i></a>
+                        <div class="dropdown">
+                            <button data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell text_orange"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><button class="dropdown-item" type="button">Profilo</button></li>
+                              <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                              <li><button class="dropdown-item" type="button">Logout</button></li>
+                            </ul>
+                          </div>
                     </nav>
                     
                 </div>
@@ -124,7 +131,7 @@
 
             </nav>
 
-            <!-- RIGHT BLOCK (NEXT TO SIDE NAV) -->
+            <!-- RIGHT BLOCK -->
             <div id="action_block">
 
                 <!-- MAIN-TOP NAV -->
@@ -141,13 +148,12 @@
                                     <span class="me-4">Nuovo Studente</span>
                                     
                                     <button class="btn btn-primary border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <!-- offcanvas -->
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel col-6">
                                     <div class="offcanvas-header">
                                         <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci nuovo studente</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
-                                    <!-- offcanvas -->
                                     <div class="offcanvas-body">
                                         <form class="row g-3">
                                             <div class="col-md-6">
